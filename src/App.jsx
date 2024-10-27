@@ -8,6 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "./config/firebase";
 import { AppContext } from "./context/AppContext";
+import VideoCall from "./components/ChatBox/VideoCall";
 
 const App = ()=>{
 
@@ -34,6 +35,7 @@ const App = ()=>{
         <Route path='/' element={<Login/>}/>
         <Route path='/chat' element={<Chat/>}/>
         <Route path='/profile' element={<ProfileUpdate/>}/>
+        <Route path="/video-call" element={<VideoCall />} />
       </Routes>
     </>
   )
